@@ -1,0 +1,33 @@
+{
+  "name": "phonetic-alphabets",
+  "version": "1.0.0",
+  "description": "A collection of phonetic alphabets from around the world. (Alpha, Bravo, Charlie...)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "browserify index.js --standalone alphabets > dist/alphabets.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeke/phonetic-alphabets"
+  },
+  "keywords": [
+    "alphabet",
+    "language",
+    "history",
+    "words",
+    "telephone",
+    "linguistics"
+  ],
+  "author": "zeke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeke/phonetic-alphabets/issues"
+  },
+  "homepage": "https://github.com/zeke/phonetic-alphabets",
+  "dependencies": {
+    "basic-csv": "0.0.2",
+    "handlebars": "^2.0.0-alpha.4",
+    "hbsfy": "^2.0.0"
+  }
+}

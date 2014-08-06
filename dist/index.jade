@@ -1,0 +1,25 @@
+html
+  head
+    title Phonetic Alphabets
+    script(src='alphabets.js')
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ICanHaz.js/0.10.3/ICanHaz.min.js")
+
+    script(id="spelling" type="text/html")
+    script.
+      console.log(alphabets)
+
+      $(function(){
+        //- $('input').on('change', function(e){
+        //-   console.log(alphabets.spell($('input').val()))
+        //- })
+
+        $('input').on('keyup', function(e){
+          console.log(alphabets.spell($('input').val()).map(function(a) {return a.spelling.join(" ")}).join("\n"))
+        })
+
+      })
+
+  body
+
+    input(name="query")
